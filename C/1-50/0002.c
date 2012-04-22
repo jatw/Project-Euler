@@ -15,9 +15,9 @@ int main(void) {
     while (b < 4000000) {
         if (b % 2 == 0)
            sum += b;
-           
-        a = b;
+
         b = b + a;
+        a = b - a;
     }
     
     printf("%d", sum);
